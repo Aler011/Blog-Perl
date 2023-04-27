@@ -1,0 +1,12 @@
+Página/Blog Perl 
+
+pasos:
+
+1- Descargar el archivo completo del Blog/Página
+
+2- Acceder a la carpeta source
+
+3- Seleccionar index(o cualquiera de los archivos .html) 
+y abrir en navegador para visualizar página principal
+
+Alumno: Alexis deJesus Rosaldo Pacheco

@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Education">
+  <meta name="author" content="Alexis de Jesús Rosaldo Pacheco">
+  <title>sintaxis</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="sticky-footer-navbar.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../source/index.html">PERL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../source/historia.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../source/caracteristicas.html">Características</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../source/sintaxis-semantica.html">Sintáxis y semántica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../source/funciones-subrutinas.html">Funciones/Subrutinas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://perldoc.perl.org/">Documentación Oficial</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Begin page content -->
+  <main class="flex-shrink-0">
+    <br>
+    <div class="container">
+      <div class="container">
+        <img class="mw-100" src="../images/perl-code-example-min.jpeg" alt="Max-width 100%">
+      </div>
+      
+      <h1 class="mt-5">Sintáxis y semántica de Perl</h1>
+      <p style="font-size: 18px;">Como ya se ha mencionado en otras secciones, Perl es un lenguaje de programación de
+        propósito general desarrollado originalmente para la manipulación de texto y ahora se usa para una amplia gama
+        de tareas que incluyen administración de sistemas, desarrollo web, programación de redes, desarrollo de GUI y
+        más. </p>
+      <p style="font-size: 18px;"> El lenguaje pretende ser práctico (fácil de usar, eficiente, completo) en lugar de
+        hermoso (pequeño, elegante, mínimo). Sus características principales son que es fácil de usar, es compatible con
+        la programación de procedimientos y orientada a objetos (OO), tiene un potente soporte incorporado para el
+        procesamiento de texto y tiene una de las colecciones de módulos de terceros más impresionantes del mundo.</p>
+      <p style="font-size: 18px;">Un script o programa de Perl consta de una o más declaraciones. Estas declaraciones
+        simplemente están escritas en el guión de una manera directa. No hace falta que tenga una main()función ni nada
+        por el estilo.</p>
+
+      <p style="font-size: 18px;">
+        Las declaraciones de Perl terminan en un punto y coma:
+      <pre><code>print &quot;Hello, world&quot;;</code></pre>
+      </p>
+      <p style="font-size: 18px;">El nombre normalmente comienza con mayúscula (Perl) cuando se refiere al lenguaje y
+        con minúscula (perl)
+        cuando se refiere al propio programa intérprete debido a que los sistemas de ficheros Unix distinguen
+        mayúsculas y minúsculas. </p>
+      <p style="font-size: 18px;">El nombre es descrito ocasionalmente como "PERL" (por Practical Extraction and Report
+        Language -
+        Lenguaje Práctico para la Extracción e Informe). Aunque esta expansión ha prevalecido en muchos
+        manuales actuales, incluyendo la página de manual de Perl, es un retroacrónimo y oficialmente el nombre no
+        quiere decir nada. </p>
+      <p style="font-size: 18px;">La semántica del lenguaje de programación Perl se basa en gran medida, en el lenguaje
+        de programación C e incluye algunas de las mejores características de sed, awk, el Shell de Unix y, como mínimo,
+        une decena de herramientas y lenguajes diferentes.</p>
+      <hr>
+
+
+      <h3>Estructura básica de Perl</h3>
+
+      <p style="font-size: 18px;">
+        La estructura completa de Perl deriva ampliamente del lenguaje C. Perl es un lenguaje imperativo, con variables,
+        expresiones, asignaciones, bloques de código delimitados por llaves, estructuras de control y subrutinas.
+      </p>
+      <p style="font-size: 18px;">Perl también toma características de la programación shell. Todas las variables son
+        marcadas con un Sigilo precedente (Sigil, en inglés). Los sigilos identifican inequívocamente los nombres de las
+        variables, permitiendo a Perl tener una rica sintaxis. Notablemente, los sigilos permiten interpolar variables
+        directamente dentro de las cadenas de caracteres (string). Como en los shell, Perl tiene muchas funciones
+        integradas para tareas comunes y para acceder a los recursos del sistema. </p>
+      <p style="font-size: 18px;">Perl toma las listas del Lisp, hash (memoria asociativa) del AWK y expresiones
+        regulares del sed. Todo esto simplifica y facilita todas las formas del análisis sintáctico, manejo de texto y
+        tareas de gestión de datos. </p>
+      <hr>
+
+      <h3>Diseño de Perl</h3>
+
+      <p style="font-size: 18px;">
+        El diseño de Perl puede ser entendido como una respuesta a tres amplias tendencias de la industria informática:
+        rebaja de los costes en el hardware, aumento de los costes laborales y las mejoras en la tecnología de
+        compiladores.
+      </p>
+      <p style="font-size: 18px;">Perl tiene muchas características que facilitan la tarea del programador a costa de
+        unos requerimientos de CPU y memoria mayores. Estas incluyen gestión de memoria automática; tipo de dato
+        dinámico; strings, listas y hashes; expresiones regulares; introspección y una función eval(). </p>
+      <p style="font-size: 18px;">La sintaxis de Perl refleja la idea de que "cosas que son diferentes deben parecer
+        diferentes". Por ejemplo, escalares, arrays y hashes tienen diferente sigilo. Índices de array y claves hash
+        usan diferentes clases de paréntesis. Strings y expresiones regulares tienen diferentes delimitadores estándar.
+        Esta aproximación puede contrastarse con lenguajes como Lisp, donde la misma construcción S-expresión y sintaxis
+        básica se usa para muchos y variados propósitos. </p>
+
+      <p style="font-size: 18px;">Perl tiene características que soportan una variedad de paradigmas de programación,
+        como la imperativa, funcional y la orientada a objetos. </p>
+      <hr>
+
+      <h3>¿Cómo funciona Perl?</h3>
+
+      <p style="font-size: 18px;">
+        Perl está implementado como un intérprete, escrito en C, junto con una gran colección de módulos, escritos en
+        Perl y C. El intérprete tiene una arquitectura orientada a objetos. Todos los elementos del lenguaje Perl
+        —escalares, listas, hashes, referencias a código, manejadores de archivo— están representados en el intérprete
+        como estructuras C. Las operaciones sobre estas estructuras están definidas como una numerosa colección de
+        macros, typedef y funciones; esto constituye la API C de Perl.
+      </p>
+      <p style="font-size: 18px;">La ejecución de un programa Perl se puede dividir, generosamente, en dos fases: tiempo
+        de compilación y tiempo de ejecución. </p>
+
+      <ul>
+        <li>En tiempo de compilación el intérprete parsea el texto del programa en un árbol sintáctico.</li>
+        <li>En tiempo de ejecución, ejecuta el programa siguiendo el árbol. </li>
+        <li>El texto es parseado solo una vez y el árbol sintáctico es optimizado antes de ser ejecutado, para que la
+          fase de ejecución sea relativamente eficiente.</li>
+        <li>Las optimizaciones del árbol sintáctico en tiempo de compilación incluyen simplificación de expresiones
+          constantes, propagación del contexto y optimización en trozos sueltos de código. </li>
+      </ul>
+
+      <p style="font-size: 18px;">
+        Perl es un lenguaje dinámico y tiene una gramática sensible al contexto que puede quedar afectada por el código
+        ejecutado durante una fase de ejecución intermedia. Por eso Perl no puede ser parseado mediante una aplicación
+        directa de analizadores sintácticos/parseadores Lex/Yacc. En cambio, el intérprete implementa su propio
+        analizador léxico, que coordinado con un parseador modificado GNU bison resuelve las ambigüedades del lenguaje.
+        Se ha dicho que "solo perl puede parsear Perl", queriendo decir que solo el intérprete Perl (perl) puede parsear
+        el lenguaje Perl (Perl).
+      </p>
+      <hr>
+
+      <h3>Sintáxis</h3>
+      <div class="container">
+        <img src="../images/perl-camello.gif" class="d-block w-250" alt="...">
+      </div>
+      <p style="font-size: 18px;">
+        Un programa Perl consta de una secuencia de declaraciones y sentencias que se ejecutan de arriba hacia abajo.
+        Los bucles, subrutinas y otras estructuras de control le permiten saltar dentro del código.
+      </p>
+      <p style="font-size: 18px;">Perl es un lenguaje de formato libre : puede formatearlo y aplicarle la sangría que
+        desee. Los espacios en blanco sirven principalmente para separar tokens, a diferencia de lenguajes como Python,
+        donde es una parte importante de la sintaxis, o Fortran, donde es irrelevante.</p>
+      <p style="font-size: 18px;">Muchos de los elementos sintácticos de Perl son opcionales . En lugar de pedirle que
+        coloque paréntesis alrededor de cada llamada de función y que declare cada variable, a menudo puede omitir
+        dichos elementos explícitos y Perl descubrirá lo que quiso decir. Esto se conoce como Do What I Mean , abreviado
+        DWIM . Permite a los programadores ser perezosos y codificar en un estilo con el que se sientan cómodos.</p>
+      <p style="font-size: 18px;">Perl toma prestada la sintaxis y los conceptos de muchos lenguajes: awk, sed, C,
+        Bourne Shell, Smalltalk, Lisp e incluso inglés. Otros lenguajes han tomado prestada la sintaxis de Perl,
+        particularmente sus extensiones de expresiones regulares. Entonces, si ha programado en otro idioma, verá piezas
+        familiares en Perl. A menudo funcionan de la misma manera, pero consulte perltrap para obtener información sobre
+        cómo se diferencian.</p>
+      <hr>
+
+      <h5>Tipos de variables</h5>
+      <p>Perl tiene tres tipos de variables principales: escalares, matrices y hashes.</p>
+      <p>Un <strong>escalar</strong> representa un solo valor:</p>
+      <pre><code>my $animal = &quot;camel&quot;;
+          my $answer = 42;</code></pre>
+      <p>Los valores escalares pueden ser cadenas, enteros o números de punto flotante, y Perl los convertirá
+        automáticamente según sea necesario. No es necesario declarar previamente sus tipos de variables, pero debe
+        declararlos usando la mypalabra clave la primera vez que los use. (Este es uno de los requisitos de use
+        strict;.)</p>
+      <p>Los arreglos como una <strong>matriz</strong> representan una lista de valores:</p>
+
+      <pre><code>
+        my @animals = (&quot;camel&quot;, &quot;llama&quot;, &quot;owl&quot;);
+        my @numbers = (23, 42, 69);
+        my @mixed   = (&quot;camel&quot;, 42, 1.23);</code></pre>
+      <p>Un <strong>hash</strong> representa un conjunto de pares clave/valor:</p>
+      <pre><code>my %fruit_color = (&quot;apple&quot;, &quot;red&quot;, &quot;banana&quot;, &quot;yellow&quot;);</code></pre>
+      <hr>
+
+      <h5>Tipos de operadores</h5>
+      <p>Operadores aritmeticos</p>
+      <ul>
+        <li>+ addition</li>
+        <li>- subtraction</li>
+        <li>* multiplication</li>
+        <li>/ division</li>
+      </ul>
+      <p>Comparación numérica:</p>
+      <ul>
+        <li>== equality</li>
+        <li>!= inequality</li>
+        <li>
+          < less than</li>
+        <li>> greater than</li>
+        <li>* multiplication</li>
+        <li>>= greater than or equal
+        </li>
+      </ul>
+      <p>Booleanos:</p>
+      <ul>
+        <li>&& and</li>
+        <li>|| or</li>
+        <li>! not</li>
+      </ul>
+      <hr>
+      <h5>Declaraciones</h5>
+
+      <p style="font-size: 18px;">Lo único que necesita declarar en Perl son los formatos de informe y las subrutinas
+        (ya veces ni siquiera las
+        subrutinas). Una variable escalar mantiene el valor indefinido ( undef) hasta que se le asigna un valor
+        definido, que es cualquier otro que no sea undef. Cuando se usa como un número, undefse trata como 0; cuando se
+        usa como una cadena, se trata como una cadena vacía ""; y cuando se usa como una referencia que no se asigna, se
+        trata como un error. Si habilita las advertencias, se le notificará de un valor no inicializado cada vez que lo
+        trate undefcomo una cadena o un número. Bueno, por lo general. contextos booleanos, tales como: </p>
+      <pre><code>if ($a) {}</code></pre>
+
+      <hr>
+      <h5>Modificadores de declaraciones</h5>
+
+      <p style="font-size: 18px;">Opcionalmente, cualquier declaración simple puede ir seguida de un modificador ÚNICO ,
+        justo antes del punto y
+        coma final (o el final del bloque). Los posibles modificadores son:</p>
+      <pre><code class="plaintext">
+        if EXPR
+        unless EXPR
+        while EXPR
+        until EXPR
+        for LIST
+        foreach LIST
+        when EXPR</code></pre>
+      <p style="font-size: 18px;">El modificador <strong>EXPR</strong> se denomina "condición". Su verdad o falsedad
+        determina cómo se
+        comportará el
+        modificador.</p>
+      <p style="font-size: 18px;"><strong>if</strong> ejecuta la declaración una vez si y solo si la condición es
+        verdadera. unlesses lo
+        contrario, ejecuta la
+        instrucción a menos que la condición sea verdadera (es decir, si la condición es falsa). Consulte "Valores
+        escalares" en perldata para conocer las definiciones de verdadero y falso.</p>
+      <pre><code>print &quot;Basset hounds got long ears&quot; if length $ear &gt;= 10;
+          go_outside() and play() unless $is_raining;</code></pre>
+
+      <p style="font-size: 18px;">El <strong>for(each) </strong>modificador es un iterador: ejecuta la instrucción una
+        vez para cada elemento de
+        la LISTA (con $_alias para cada elemento por turno). No hay sintaxis para especificar un bucle for de estilo C o
+        una variable de iteración con ámbito léxico en este formulario..</p>
+
+      <pre><code>print &quot;Hello $_!\n&quot; for qw(world Dolly nurse);</code></pre>
+
+      <p style="font-size: 18px;">El <strong>while</strong> repite el enunciado mientras la condición sea verdadera.
+        Postfix whiletiene el mismo
+        tratamiento mágico de algunos tipos de condiciones que tiene prefix while. untilhace lo contrario, repite la
+        declaración hasta que la condición sea verdadera (o mientras la condición sea falsa):</p>
+
+      <pre><code># Both of these count from 0 to 10.
+          print $i++ while $i &lt;= 10;
+          print $j++ until $j &gt;  10;</code></pre>
+
+      <p style="font-size: 18px;">Los modificadores <strong>while</strong> y <strong>until</strong> tienen la semántica
+        habitual de " while
+        bucle" (el condicional se evalúa primero), excepto cuando se aplica a un do-BLOCK (oa la instrucción Perl4
+        do-SUBROUTINE), en cuyo caso el bloque se ejecuta una vez antes de que se evalúe el condicional.
+      </p>
+
+      <p style="font-size: 18px;">Esto es para que puedas escribir bucles como:</p>
+
+      <pre><code>do {
+              $line = &lt;STDIN&gt;;
+              ...
+          } until !defined($line) || $line eq &quot;.\n&quot;</code></pre>
+
+      <h5>Bucles en C vs Perl</h5>
+
+      <p style="font-size: 18px;">Aquí&#39;s se precenta un ejemplo de un algoritmo de Perl escrito en C:</p>
+
+      <pre><code>for (my $i = 0; $i &lt; @ary1; $i++) {
+          for (my $j = 0; $j &lt; @ary2; $j++) {
+              if ($ary1[$i] &gt; $ary2[$j]) {
+                  last; # can&#39;t go to outer :-(
+              }
+              $ary1[$i] += $ary2[$j];
+          }
+          # this is where that last takes me
+      }</code></pre>
+
+      <p style="font-size: 18px;">Como se observa aquí&#39;s la programación en Perl es simplificada y limpia:</p>
+
+      <pre><code>OUTER: for my $wid (@ary1) {
+      INNER:   for my $jet (@ary2) {
+                  next OUTER if $wid &gt; $jet;
+                  $wid += $jet;
+               }
+            }</code></pre>
+
+      <hr>
+      <h3>Sentencias y declaraciones básicas</h3>
+      <h5>Condicionales</h5>
+      <p style="font-size: 18px;">
+        Perl admite muchos tipos de sentencias condicionales (sentencias que se basan en resultados booleanos). Las
+        declaraciones condicionales más comunes son if-else, menos, y declaraciones ternarias. given declaraciones given
+        se introducen como una construcción similar a un interruptor de lenguajes derivados de C y están disponibles en
+        las versiones Perl 5.10 y superiores.
+      </p>
+      <h5>Declaraciones If-else </h5>
+      <p style="font-size: 18px;">
+        La estructura básica de una sentencia if es así:
+      </p>
+      <pre><code>
+    if (EXPR) BLOCK
+    if (EXPR) BLOCK else BLOCK
+    if (EXPR) BLOCK elsif (EXPR) BLOCK ...
+    if (EXPR) BLOCK elsif (EXPR) BLOCK ... else BLOCK
+
+      </code></pre>
+
+      <p style="font-size: 18px;">
+        Para las sentencias if simples, el if puede preceder o suceder al código que se ejecutará.
+      </p>
+      <pre><code>
+    $number = 7;
+    if ($number > 4) { print "$number is greater than four!"; }
+        
+    # Can also be written this way
+    print "$number is greater than four!" if $number > 4;
+         
+      </code></pre>
+
+
+      <h5>Bucles</h5>
+      <p style="font-size: 18px;">
+        Perl admite muchos tipos de construcciones de bucle: for / foreach, while / do-while y hasta.
+      </p>
+
+      <pre><code>
+
+ @numbers = 1..42;
+   for (my $i=0; $i <= $#numbers; $i++) {
+       print "$numbers[$i]\n";
+   }
+
+  #Can also be written as
+  foreach my $num (@numbers) {
+     print "$num\n";
+  }
+        
+    </code></pre>
+
+      <p style="font-size: 18px;">
+        El bucle while evalúa el condicional antes de ejecutar el bloque asociado. Entonces, a veces el bloque nunca se
+        ejecuta. Por ejemplo, el siguiente código nunca se ejecutaría si el $fh fuera el identificador de archivo para
+        un archivo vacío, o si ya estaba agotado antes del condicional.
+      </p>
+
+      <pre><code>
+  while (my $line = readline $fh) {
+        say $line;
+  } 
+         </code></pre>
+
+      <p style="font-size: 18px;">
+        Los bucles do / while y do / until , por otro lado, evalúan el condicional después de cada vez que se ejecuta el
+        bloqueo. Por lo tanto, un bucle do / while o do / until siempre se ejecuta al menos una vez.
+      </p>
+
+      <pre><code>
+  my $greeting_count = 0;
+    do {
+      say "Hello";
+      $greeting_count++;
+    } until ( $greeting_count > 1)
+          
+  # Hello
+  # Hello
+
+       </code></pre>
+
+    </div>
+
+
+  </main>
+
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <p class="float-end"><a href="#">Volver al principio de esta página</a></p>
+      <p>&copy; 2022 El rincón de Perl</p>
+    </div>
+  </footer>
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

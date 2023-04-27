@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Education">
+  <meta name="author" content="Alexis de Jesús Rosaldo Pacheco">
+  <title>características</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="sticky-footer-navbar.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../source/index.html">PERL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../source/historia.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../source/caracteristicas.html">Características</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../source/sintaxis-semantica.html">Sintáxis y semántica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../source/funciones-subrutinas.html">Funciones/Subrutinas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://perldoc.perl.org/">Documentación Oficial</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Begin page content -->
+  <main class="flex-shrink-0">
+
+      <div class="container">
+        <img src="../images/20161202011230_perl.webp" class="d-block w-250" alt="...">
+      </div>
+   
+
+    <div class="container">
+
+      <h1 class="mt-5">Características de Perl</h1>
+      <p style="font-size: 18px;">Perl significa oficialmente Practical Extraction and Report Language, excepto cuando
+        no es así. </p>
+      <hr>
+      <h5>Razones de su origen</h5>
+      <p style="font-size: 18px;">Perl fue originalmente un lenguaje optimizado para escanear archivos de texto
+        arbitrarios,
+        extraer información de esos archivos de texto e imprimir informes basados en esa información. Rápidamente se
+        convirtió
+        en un buen lenguaje para muchas tareas de administración de sistemas. A lo largo de los años, Perl se ha
+        convertido
+        en un lenguaje de programación de propósito general. Es ampliamente utilizado para todo, desde "una línea"
+        rápida
+        hasta el desarrollo de aplicaciones a gran escala.</p>
+      <h5>Sus objetivos</h5>
+      <p style="font-size: 18px;">El lenguaje pretende ser práctico (fácil de usar, eficiente, completo) en lugar de
+        hermoso (pequeño, elegante, mínimo). Combina (en opinión del autor, de todos modos) algunas de las mejores
+        características de sed , awk y sh , haciéndolo familiar y fácil de usar para los usuarios de Unix para crear
+        soluciones rápidas a problemas molestos. Sus funciones de programación de uso general admiten paradigmas de
+        programación orientados a objetos, funcionales y procedimentales, lo que convierte a Perl en un lenguaje cómodo
+        para proyectos importantes a largo plazo, sea cual sea su inclinación. </p>
+      <p style="font-size: 18px;">Las raíces de Perl en el procesamiento de texto no se han olvidado a lo largo de los
+        años. Todavía cuenta con algunas de las expresiones regulares más poderosas que se pueden encontrar en cualquier
+        lugar, y su soporte para texto Unicode es de primera clase. También maneja todo tipo de texto estructurado, a
+        través de una extensa colección de extensiones. Esas bibliotecas, recopiladas en el CPAN, brindan soluciones
+        listas para usar para una asombrosa variedad de problemas. Cuando no han establecido el estándar por sí mismos,
+        roban a los mejores, al igual que Perl.</p>
+      <hr>
+      <h3>¿Cómo funciona?</h3>
+      <p style="font-size: 18px;">La estructura completa de Perl deriva ampliamente del lenguaje C. Perl es un lenguaje
+        imperativo, con variables, expresiones, asignaciones, bloques de código delimitados por llaves, estructuras de
+        control y subrutinas.
+      </p>
+      <p style="font-size: 18px;">Perl también toma características de la programación shell. Todas las variables son
+        marcadas con un Sigilo precedente (Sigil, en inglés). Los sigilos identifican inequívocamente los nombres de las
+        variables, permitiendo a Perl tener una rica sintaxis. Notablemente, los sigilos permiten interpolar variables
+        directamente dentro de las cadenas de caracteres (string). Como en los shell, Perl tiene muchas funciones
+        integradas para tareas comunes y para acceder a los recursos del sistema. </p>
+      <p style="font-size: 18px;">El nombre es descrito ocasionalmente como "PERL" (por Practical Extraction and Report
+        Language -
+        Lenguaje Práctico para la Extracción e Informe). Aunque esta expansión ha prevalecido en muchos
+        manuales actuales, incluyendo la página de manual de Perl, es un retroacrónimo y oficialmente el nombre no
+        quiere decir nada. </p>
+      <p style="font-size: 18px;">
+        Perl toma las listas del Lisp, hash (memoria asociativa) del AWK y expresiones regulares del sed. Todo esto
+        simplifica y facilita todas las formas del análisis sintáctico, manejo de texto y tareas de gestión de datos.
+      </p>
+      <p style="font-size: 18px;">
+        Todas las versiones de Perl hacen el tipificado automático de datos y la gestión de memoria. El intérprete
+        conoce el tipo y requerimientos de almacenamiento de cada objeto en el programa; reserva y libera espacio para
+        ellos según sea necesario. Las conversiones legales de tipo se hacen de forma automática en tiempo de ejecución;
+        las conversiones ilegales son consideradas errores fatales.
+      </p>
+      <hr>
+      <h3>¿Dónde se usa?</h3>
+
+
+      <p style="font-size: 18px;">
+        Perl tiene muchas y variadas aplicaciones, gracias a la disponibilidad de muchos módulos estándares y de
+        terceras partes.
+      </p>
+      <p style="font-size: 18px;">
+        Perl es un lenguaje de programación de propósito general desarrollado originalmente para la manipulación de
+        texto y ahora se usa para una amplia gama de tareas que incluyen administración de sistemas, desarrollo web,
+        programación de redes, desarrollo de GUI y más.
+      </p>
+      <p style="font-size: 18px;">
+        El lenguaje pretende ser práctico (fácil de usar, eficiente, completo) en lugar de hermoso (pequeño, elegante,
+        mínimo). Sus características principales son que es fácil de usar, es compatible con la programación de
+        procedimientos y orientada a objetos (OO), tiene un potente soporte incorporado para el procesamiento de texto y
+        tiene una de las colecciones de módulos de terceros más impresionantes del mundo.
+      </p>
+      <p style="font-size: 18px;">
+        Se ha usado desde los primeros días del Web para escribir guiones (scripts) CGI. Es una de las "tres Pes" (Perl,
+        Python y PHP), que son los lenguajes más populares para la creación de aplicaciones Web, y es un componente
+        integral de la popular solución LAMP para el desarrollo web. Grandes proyectos escritos en Perl son Slash,
+        IMDb9​ y UseModWiki, un motor de Wiki. Muchos sitios web con alto tráfico, como Amazon.com y Ticketmaster.com
+        usan Perl extensamente.
+      </p>
+      <p style="font-size: 18px;">
+        Perl es también ampliamente usado en finanzas y bioinformática, donde es apreciado por su desarrollo rápido,
+        tanto de aplicaciones como de despliegue, así como la habilidad de manejar grandes volúmenes de datos.
+      </p>
+      <div class="container">
+        <img class="mx-auto d-block" src="../images/Usos+de+Perl+Sistemas+de+Gestión+de+Información.jpg" alt="Card image cap">
+      </div>
+    </div>
+
+
+  </main>
+
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <p class="float-end"><a href="#">Volver al principio de esta página</a></p>
+      <p>&copy; 2022 El rincón de Perl</p>
+    </div>
+  </footer>
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

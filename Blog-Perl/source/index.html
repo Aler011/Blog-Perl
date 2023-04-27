@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Education">
+  <meta name="author" content="Alexis de Jesús Rosaldo Pacheco">
+  <title>principal</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="../source/css/carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../source/index.html">PERL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../source/historia.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../source/caracteristicas.html">Características</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../source/sintaxis-semantica.html">Sintáxis y semántica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../source/funciones-subrutinas.html">Funciones/Subrutinas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://perldoc.perl.org/">Documentación Oficial</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>¿Perl?</h1>
+            </div>
+          </div>
+          <img src="../images/perl4.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Conoce de cerca Perl</h1>
+            </div>
+          </div>
+          <img src="../images/perl-training-in-chennai.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Explora las principales características</h1>
+            </div>
+          </div>
+          <img src="../images/fondo-perl.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-3">
+          <img src="../images/imagen_camellos_negro.png" style="background-color: cornflowerblue;"
+            class="rounded-circle" width="140" height="140" alt="...">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="../images/perl4.png" />
+          <text x="50%" y="50%" fill="#777" dy=".3em"></text>
+
+          </svg>
+
+          <h3>Historia</h3>
+          <p style="font-size: 18px;">Conoce quién está detrás de Perl y que conllevó a su surgimiento</p>
+          <p style="font-size: 18px;"><a class="btn btn-secondary" href="../source/historia.html">Ver detalles
+              &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-3">
+          <img src="../images/usos-perl.jpg" class="rounded-circle" width="140" height="140" alt="...">
+
+          <h3>Características</h3>
+          <p style="font-size: 18px;">Explora las principales características de este lenguaje de programación</p>
+          <p style="font-size: 18px;"><a class="btn btn-secondary" href="../source/caracteristicas.html">Ver detalles
+              &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <img src="../images/perl-code2.jpg" class="rounded-circle" width="140" height="140" alt="...">
+
+          <h3>Sintáxis y semántica</h3>
+          <p style="font-size: 18px;">Descubre como funciona y se codifica en Perl</p>
+          <p><a class="btn btn-secondary" href="../source/sintaxis-semantica.html">Ver detalles &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-3">
+          <img src="../images/subrutine-perl2.png" style="background-color: cornflowerblue;"
+            class="rounded-circle" width="140" height="140" alt="...">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="../images/function-perl.png" />
+          <text x="50%" y="50%" fill="#777" dy=".3em"></text>
+
+          </svg>
+
+          <h3>Funciones/Subrutinas</h3>
+          <p style="font-size: 18px;">Aprende las declaraciones de las funciones en Perl</p>
+          <p style="font-size: 18px;"><a class="btn btn-secondary" href="../source/funciones-subrutinas.html">Ver detalles
+              &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+
+      </div><!-- /.row -->
+
+
+      <main class="container">
+
+        <div class="row g-5">
+          <div class="col-md-8">
+            <article class="blog-post">
+              <h4>
+                <span class="mw-headline" id="El concepto de Perl">El concepto de Perl</span>
+              </h4>
+              <p style="font-size: 18px;">Perl significa oficialmente Practical Extraction and Report Language, excepto
+                cuando no es así.
+              </p>
+              <p style="font-size: 18px;"> Perl fue originalmente un lenguaje optimizado para escanear archivos de texto
+                arbitrarios,
+                extraer información de esos archivos de texto e imprimir informes basados en esa información. </p>
+              <hr>
+              <h4>
+                <span class="mw-headline" id="Algunas características de Perl">Algunas características de Perl</span>
+              </h4>
+              <p style="font-size: 18px;">Perl también toma características de la programación shell. Todas las
+                variables son marcadas
+                con un Sigilo precedente (Sigil, en inglés). Los sigilos identifican inequívocamente los nombres
+                de las variables, permitiendo a Perl tener una rica sintaxis. Notablemente,
+                los sigilos permiten interpolar variables directamente dentro de las cadenas de caracteres (string).
+                Como en los shell, Perl tiene muchas funciones integradas para tareas comunes y para acceder a los
+                recursos del sistema. </p>
+              <h4>
+                <span class="mw-headline" id="El enfoque de perl">El enfoque de perl</span>
+              </h4>
+              <p style="font-size: 18px;">Perl es un lenguaje pensado para la manipulación de cadenas de caracteres,
+                archivos y procesos.
+                Esta manipulación se va simplificada por el importante número de operadores a disposición del usuario.
+                El lenguaje Perl se percibe habitualmente como un lenguaje intermedio entre los shell scripts y la
+                programación en C.
+                En efecto, los programas en Perl son una sucesión de instrucciones y son similares a los shell scripts
+                porque no existe un procedimiento principal como la subrutina main en C. Sin embargo, se parece al
+                lenguaje C
+                en su sintaxis y en el número importante de funciones que permiten la manipulación de cadenas de
+                caracteres y archivos.</p>
+              <h4>
+                <span class="mw-headline" id="Principales campos de Perl">Principales campos de Perl</span>
+              </h4>
+              <dl>
+                <dt style="font-size: 18px;">La administración de sistemas operativos</dt>
+                <dd style="font-size: 18px;"> Debido a sus características Perl es muy potente en la creación de
+                  pequeños programas que pueden
+                  ser usados como filtros para obtener información de ficheros, realizar búsquedas, etc.
+                  Además, aunque Perl nació en un entorno Unix, hay versiones para casi todas las plataformas
+                  existentes.</dd>
+                <dt style="font-size: 18px;">La creación de formularios en la Web. </dt>
+                <dd style="font-size: 18px;"> Es decir, se utilizan para la creación de scripts CGI (Common Gateway
+                  Interface).
+                  Estos scripts realizan el intercambio de información entre aplicaciones externas y servicios de
+                  información,
+                  es decir, se encargan de tratar y hacer llegar la información que el cliente WWW manda al servidor a
+                  través de un formulario.</dd>
+
+              </dl>
+
+              <h4>
+                <span class="mw-headline" id="Perl hoy en día">Perl hoy en día</span>
+              </h4>
+              <p style="font-size: 18px;">Actualmente existen dos versiones altamente populares de Perl, la 4.3 y la
+                5.0, de hecho hay
+                diferencias
+                importantes entre una versión y otra. Seguramente el lector se pregunta porque surge la duda entre usar
+                una
+                versión vieja y una nueva, por regla general las nuevas versiones son mejores que las anteriores de modo
+                que las opacan en todo sentido, Perl no es la excepción a esta regla, el único factor que impide una
+                transición inmediata es que no son 100% compatibles. La versión 5 de Perl es una reescritura total que
+                ya incluye un manejo de estructuras abstractas de datos mucho mas poderoso, incluso, soporta la
+                orientación
+                a objetos a su manera (lo que rompe en gran medida con la filosofía tradiconal de Perl de una
+                programación
+                más parecida a los Shells de Unix que al modular lenguaje C). De modo que las librerías, por ejemplo
+                para creación de CGIs no funcionan de una función a otra por lo que la migración es poco practica.</p>
+              <hr>
+            </article>
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="position-sticky" style="top: 2rem;">
+
+              <!--<div class="p-4 mb-3 bg-light rounded">
+                <h4 class="fst-italic">About</h4>
+                <p class="mb-0">Customize this section to tell your visitors a little bit about your publication,
+                  writers, content, or something else entirely. Totally up to you.</p>
+              </div>  -->
+
+
+              <div class="p-4">
+                <h4 class="fst-italic">Indice</h4>
+                <ul>
+                  <li class="toclevel-1 tocsection-1"><a href="#El concepto de Perl"><span class="tocnumber"></span>
+                      <span class="toctext">El concepto de Perl</span></a>
+                  </li>
+                  <li class="toclevel-1 tocsection-4"><a href="#Algunas características de Perl"><span
+                        class="tocnumber"></span> <span class="toctext">Algunas características de Perl</span></a>
+                    <ul>
+                      <li class="toclevel-2 tocsection-5"><a href="#El enfoque de perl"><span class="tocnumber"></span>
+                          <span class="toctext">El enfoque de perl</span></a></li>
+                      <li class="toclevel-2 tocsection-6"><a href="#Principales campos de Perl"><span
+                            class="tocnumber"></span> <span class="toctext">Principales campos de Perl</span></a></li>
+                      <li class="toclevel-2 tocsection-7"><a href="#Perl hoy en día"><span class="tocnumber"></span>
+                          <span class="toctext">Perl hoy en día</span></a></li>
+                    </ul>
+
+              </div>
+
+              <div class="p-4">
+                <h4 class="fst-italic">Referencias:</h4>
+                <ol class="list-unstyled">
+                  <li><a href="https://www.perl.org/">Perl sitio oficial</a></li>
+                  <li><a href="https://es.wikipedia.org/wiki/Perl#Historia">Perl Wikipedia</a></li>
+                  <li><a href="https://www.perl.com/pub/au/Wall_Larry">Perl-Wall-Larry</a></li>
+                  <li><a href="https://github.com/zipf/perldoc-es"> perldocES perldoc-es</a></li>
+                  <li><a href="https://www.perl.com/categories/syntax"> Sintáxis de Perl</a></li>
+                </ol>
+                <ol class="list-unstyled">
+                  <h4 class="fst-italic">Recursos visuales:</h4>
+                  <li><a
+                      href="https://www.123rf.com/photo_127768430_programming-language-perl-inscription-on-the-background-of-computer-code-modern-digital-technologies.html">Código
+                      Perl</a></li>
+                  <li><a href="http://techies-world.com/how-to-check-the-syntax-of-perl-script-without-execution/">Perl
+                      camello</a></li>
+                  <li><a href="https://ienrformacion.es/curso-perl/">Primer logo Perl</a></li>
+                  <li><a href="https://es.wikipedia.org/wiki/Perl#/media/Archivo:Cebolla_Chulita.png">Cebolla Perl</a>
+                  </li>
+                  <li><a
+                      href="https://www.google.com/search?q=perl+codigo&client=firefox-b-d&sxsrf=APq-WBt2wZmXE9fZTKvy94bXGaKRlbh9WA:1646520837679&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi4mZSNiLD2AhVRVTABHQwjA9gQ_AUoAXoECAEQAw&biw=1920&bih=955&dpr=1#imgrc=Wt__DGZKKj7opM">Imagene
+                      Perl código</a></li>
+                  <li><a href="https://slideplayer.es/slide/2269372/">Usos imagen</a></li>
+
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+
+      <!-- FOOTER -->
+      <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+          <p class="float-end"><a href="#">Volver al principio de esta página</a></p>
+          <p>&copy; 2022 El rincón de Perl</p>
+        </div>
+      </footer>
+
+  </main>
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

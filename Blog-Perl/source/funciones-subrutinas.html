@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Education">
+  <meta name="author" content="Alexis de Jesús Rosaldo Pacheco">
+  <title>funciones-subrutinas</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="sticky-footer-navbar.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../source/index.html">PERL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../source/historia.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../source/caracteristicas.html">Características</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../source/sintaxis-semantica.html">Sintáxis y semántica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../source/funciones-subrutinas.html">Funciones/Subrutinas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://perldoc.perl.org/">Documentación Oficial</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Begin page content -->
+  <main class="flex-shrink-0">
+    <br>
+    <div class="container">
+      <div class="container">
+        <img class="mx-auto d-block" style="margin: 60px;" src="../images/subrutine-perl2.png" alt="Card image cap">
+      </div>
+
+      <h1 class="mt-5">Funciones o subrutinas en Perl</h1>
+      <p style="font-size: 18px; justify-content: right;">Una función o subrutina de Perl es un grupo de sentencias que
+        juntas realizan una tarea específica. En cada lenguaje de programación, el usuario quiere reutilizar el código.
+        Entonces, el usuario pone la sección de código en función o subrutina para que no haya necesidad de escribir
+        código una y otra vez. En Perl, los términos función, subrutina y método son los mismos, pero en algunos
+        lenguajes de programación se consideran diferentes. La palabra subrutinas se usa más en la programación de Perl
+        porque se crea usando la palabra clave sub. Cada vez que hay una llamada a la función, Perl deja de ejecutar
+        todo su programa y salta a la función para ejecutarla y luego regresa a la sección de código que estaba
+        ejecutando anteriormente. Uno puede evitar el uso de la declaración de devolución.</p>
+      <p style="font-size: 18px; justify-content: center;"> Definición de subrutinas: la forma general de definir la
+        subrutina en Perl es la siguiente:</p>
+
+      <pre><code>
+          sub subroutine_name
+          {
+             # body of method or subroutine
+          }
+          </code></pre>
+
+      <h3>Llamados a subrutinas</h3>
+
+      <p style="font-size: 18px;">Llamar a subrutinas: en Perl, las subrutinas se pueden llamar pasándoles la lista de
+        argumentos de la siguiente manera:</p>
+
+      <pre><code>subroutine_name(aruguments_list);</code></pre>
+
+      <p style="font-size: 18px;">
+        La forma anterior de llamar a la subrutina solo funcionará con Perl versión 5.0 y posteriores. Antes de Perl
+        5.0, había otra forma de llamar a la subrutina, pero no se recomienda su uso porque omite los prototipos de
+        subrutina.
+      </p>
+
+      <pre><code>
+          &subroutine_name(aruguments_list);
+
+            # Perl Program to demonstrate the 
+            # subroutine declaration and calling
+              
+            #!/usr/bin/perl
+              
+            # defining subroutine
+            sub ask_user {
+              print "Hello World!\n";
+            }
+  
+          # calling subroutine
+          # you can also use
+          # &ask_user();
+          ask_user();
+          </code></pre>
+      <p>
+        <bold> Salida: Hello World!<bold>
+      </p>
+
+      <h3>Paso de parámetros con subrutinas</h3>
+
+      <p style="font-size: 18px;">Pasar parámetros a subrutinas: Esto se usa para pasar los valores como argumentos.
+        Esto se hace usando variables de matriz de lista especiales '$_'. Esto se asignará a las funciones como $_[0],
+        $_[1] y así sucesivamente.</p>
+
+      <pre><code>
+          # Perl Program to demonstrate the 
+          # Passing parameters to subroutines
+            
+          #!/usr/bin/perl
+            
+          # defining subroutine
+          sub area 
+          {
+              # passing argument    
+              $side = $_[0];
+                
+              return ($side * $side);
+          }
+            
+          # calling function
+          $totalArea = area(4);
+            
+          # displaying result
+          printf $totalArea;</code></pre>
+      <p>
+        Salida: 16
+      </p>
+
+      <h4>Ejemplo</h4>
+      <p style="font-size: 18px;">Al llamar a una función cuando esta va seguida de una lista de variables, éstas últimas se consideran como sus
+        argumentos. El lenguaje Perl duplica el contenido de estas variables en la variable predefinida @_ durante la
+        ejecución de la función. La variable @_ permite así acceder a los parámetros de la función. Estos se colocan en
+        la matriz $_[0], $_[1], ..., $_[n-1] referenciando los diferentes argumentos de la función. Por ejemplo.
+      </p>
+
+      <pre><code>
+          sub diferencia {
+            if ($_[0] < $_[1]) {
+              $_[1]-$_[0];
+            }
+            else {
+              $_[0]-$_[1];
+            }
+          }
+          $abs = &diferencia(2,3); # $abs = 1 
+        </code></pre>
+
+    </div>
+
+  </main>
+
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <p class="float-end"><a href="#">Volver al principio de esta página</a></p>
+      <p>&copy; 2022 El rincón de Perl</p>
+    </div>
+  </footer>
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
